@@ -1,0 +1,40 @@
+<%include ./partials/header%>
+    <div class="ui main text container segment">
+        <div class="ui huge header"><%=blog["title"]%></div>
+            <div class="ui top attached">
+                <div class="item">
+                    <img class="ui centered rounded image" src="<%=blog.image%>">  
+                </div>
+                
+                <div class="content">
+                   <p><%=blog.created.toDateString()%></p> 
+                </div>
+                
+                <div class="description">
+                    <p><%=blog.body%></p>
+                </div>
+            </div>
+            <!--<div class="ui compact menu">-->
+            <!--  <a class="item" href="/blogs/<%=blog.id%>/edit">-->
+            <!--    <i class="icon edit"></i>   Edit-->
+            <!--    <div class="floating ui red label">22</div>-->
+            <!--  </a>-->
+            <!--  <a class="item" href="/blogs/<%=blog.id%>">-->
+            <!--    <i class="icon trash"></i> Delete-->
+            <!--    <div class="floating ui red label">22</div>-->
+            <!--  </a>-->
+            <!--</div>-->
+            <form action="/blogs/<%=blog.id%>?_method=Delete" method="POST">
+                <div class="ui compact menu">
+                    <a class="item" href="/blogs/<%=blog.id%>/edit">
+                        <i class="icon edit"></i>   Edit
+                        <!--<div class="floating ui red label">22</div>-->
+                    </a>
+                
+                  <button class="ui item">
+                    <i class="icon trash"></i> Delete
+                  </button>    
+                 </div>
+            </form>
+    </div>
+<%include ./partials/footer%>

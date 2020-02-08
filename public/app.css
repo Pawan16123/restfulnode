@@ -1,0 +1,32 @@
+
+i.icon{
+    font-size :2em;
+}
+.container.main{
+    /*border: 3px solid black;*/
+    margin-top : 6em;
+    text-align :center;
+    margin-bottom: 2em;
+    
+}
+.ui.segment:last-child {
+    margin-bottom: 22px;
+}
+
+
+.container.segment img{
+
+    max-height: 100%;
+    max-width: 100%;
+}
+/*delete route show.ejs*/
+form div button {
+    border:none;
+}
+/*button.ui.item{*/
+/*    box-shadow: none;*/
+/*}*/
+img {
+    max-width : 850px;
+    max-height :800px;
+}
